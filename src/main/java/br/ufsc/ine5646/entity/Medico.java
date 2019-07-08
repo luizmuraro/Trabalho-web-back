@@ -22,13 +22,11 @@ public class Medico {
 	private String nome;
 	private String email;
 	private long telefone;
-	private ArrayList<Paciente> pacientes;
 	
 	public Medico(String nome, String email, long telefone) {
 		this.nome = nome;
 		this.email = email;
 		this.telefone = telefone;
-	
 	}
 
 	public Long getId() {
@@ -63,15 +61,4 @@ public class Medico {
 		this.telefone = telefone;
 	}
 
-	public ArrayList<Paciente> getPacientes() {
-		return pacientes;
-	}
-
-	public void setPacientes(ArrayList<Paciente> pacientes) {
-		this.pacientes = pacientes;
-	}
-
-
-
-	
 }

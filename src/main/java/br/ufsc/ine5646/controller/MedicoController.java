@@ -13,6 +13,7 @@ import org.springframework.web.bind.annotation.ResponseStatus;
 import org.springframework.web.bind.annotation.RestController;
 
 import br.ufsc.ine5646.entity.Medico;
+import br.ufsc.ine5646.entity.Paciente;
 import br.ufsc.ine5646.exceptions.MedicoNotFoundException;
 import br.ufsc.ine5646.repository.MedicoRepository;
 
@@ -60,5 +61,8 @@ public class MedicoController {
 	void deletaMedico(@PathVariable Long id) {
 		repository.deleteById(id);
 	}
+
+	
+	
 
 }
