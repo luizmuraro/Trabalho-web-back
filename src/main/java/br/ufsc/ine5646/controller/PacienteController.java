@@ -47,6 +47,9 @@ public class PacienteController {
 			paciente.setCpf(novoPaciente.getCpf());
 			paciente.setEmail(novoPaciente.getEmail());
 			paciente.setTelefone(novoPaciente.getTelefone());
+			paciente.setAnamnese(novoPaciente.getAnamnese());
+			paciente.setDiagnostico(novoPaciente.getDiagnostico());
+			paciente.setTratamento(novoPaciente.getTratamento());
 			return repository.save(paciente);
 		}).orElseGet(() -> {
 			novoPaciente.setId(id);
@@ -58,5 +61,7 @@ public class PacienteController {
 	void deletaPaciente(@PathVariable Long id) {
 		repository.deleteById(id);
 	}
+	
+	
 	
 }

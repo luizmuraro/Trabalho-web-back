@@ -21,14 +21,43 @@ public class Paciente {
 	private long cpf;
 	private String email;
 	private long telefone;
-	private Prontuario prontuario;
+	private String anamnese;
+	private String diagnostico;
+	private String tratamento;
 	
-	public Paciente(String nome, long cpf, String email, long telefone,Prontuario prontuario) {
+	public Paciente(String nome, long cpf, String email, long telefone, String anamase, String diagnostico, String tratamento) {
 		this.nome = nome;
 		this.cpf = cpf;
 		this.email = email;
 		this.telefone = telefone;
-		this.prontuario = prontuario;
+		this.anamnese = anamase;
+		this.diagnostico = diagnostico;
+		this.tratamento = tratamento;
+		
+	}
+
+	public String getAnamnese() {
+		return anamnese;
+	}
+
+	public void setAnamnese(String anamnese) {
+		this.anamnese = anamnese;
+	}
+
+	public String getDiagnostico() {
+		return diagnostico;
+	}
+
+	public void setDiagnostico(String diagnostico) {
+		this.diagnostico = diagnostico;
+	}
+
+	public String getTratamento() {
+		return tratamento;
+	}
+
+	public void setTratamento(String tratamento) {
+		this.tratamento = tratamento;
 	}
 
 	public Long getId() {
@@ -61,11 +90,4 @@ public class Paciente {
 	public void setTelefone(long telefone) {
 		this.telefone = telefone;
 	}
-	public Prontuario getProntuario() {
-		return prontuario;
-	}
-	public void setProntuario(Prontuario prontuario) {
-		this.prontuario = prontuario;
-	}
-
 }
